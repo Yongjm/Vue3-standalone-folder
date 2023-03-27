@@ -1,0 +1,72 @@
+/*below snipped from bootstrap 5*/
+.container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aqua;
+}
+
+@media (min-width: 576px) {
+    .container-sm, .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1320px;
+    }
+  }
+/*above snipped from bootstrap*/
+
+.buttonContainer {
+  text-align: center;
+}
+
+.lesson1 {
+    text-align: center;
+}
+
+/* for lesson 2 */
+.lesson2 {
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+
+.lesson3 {
+    text-align: center;
+}
+
+.lesson4 {
+  text-align: center;
+}
+
+ul {
+    list-style-position: inside; /* This moves the bullet point inside the list item */
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="/node_modules/vue/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="index.css"/>
+        <title>my vue 3 project</title>
+    </head>
+
+    <body>
+
+        <div class="container lesson1">     
+            <p>Lesson 1</p>     
+            
+            <div id="appLesson1"></div>
+
+            <script type="module">
+                import { createApp } from 'vue/dist/vue.esm-bundler';
+                import lesson1 from "./src/js/lesson1.js"
+
+                createApp(lesson1).mount("#appLesson1");
+            </script>
+        </div>
+
+        <div class="container lesson2">
+            <p>lesson 2</p>
+
+            <div id="appLesson2"></div>
+
+            <script type="module">
+                import { createApp } from 'vue/dist/vue.esm-bundler';
+                import lesson2 from "./src/js/lesson2.js"
+
+                createApp(lesson2).mount("#appLesson2");
+            </script>
+        </div>
+
+        <div class="container lesson3">
+            <p>lesson 3</p>
+
+            <div id="appLesson3"></div>
+
+            <script type="module">
+                import { createApp } from 'vue/dist/vue.esm-bundler';
+                import lesson3 from "./src/js/lesson3.js"
+
+                createApp(lesson3).mount("#appLesson3");
+            </script>
+        </div>
+
+        <div class="container lesson4">
+            <p>lesson 4</p>
+
+            <div id="appLesson4"></div>
+
+
+            <script type="module">
+                import { createApp } from 'vue/dist/vue.esm-bundler';
+                import lesson4 from "./src/js/lesson4.js"                
+
+                createApp(lesson4).mount("#appLesson4");
+            </script>
+        </div>
+
+        <!-- recreating lesson4, but in html file -->
+        <div class="container lesson4Take1">
+            <p>lesson 4 in Html file</p>
+
+            <div id="lesson4InHtmlFile">
+                <lesson4a-button>a</lesson4a-button>
+            </div>
+
+            <script>
+                let lesson4a = {
+                    components: {
+                        "lesson4a-button": {
+                            template: `
+                            <button><slot></slot></button>
+                            `,
+                        },
+                    }
+                };
+
+                Vue.createApp(lesson4a).mount("#lesson4InHtmlFile");
+            </script>
+        </div>
+
+    </body>
+</html>
