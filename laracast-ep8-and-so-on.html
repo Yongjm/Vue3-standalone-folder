@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="/node_modules/vue/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="index.css"/>
+        <title>ep8 and so on</title>
+        <style>
+            body {text-align: center;}
+        </style>
+        <title>my vue 3 project</title>
+    </head>
+
+    <body>
+        <button><a href="index.html" target="_blank"/>back to homepage</a> </button>
+        <div class="lesson3">            
+            <p>
+                ep8
+                <br>
+                Stylings of the checkbox
+                <br>
+                Adding form action to add new array and then clear box after add (all changes are inside Assignments.js)
+                <hr>
+                ep9
+                <br>
+                create AssignmentCreate.js, moved form action into it, and imported the .js file into Assignments.js 
+                <hr>    
+                ep10
+                <br>
+                added length of array in AssignmentList.js,
+
+            </p>
+
+            <div id="app"></div>
+
+            <script type="module">
+                import { createApp } from 'vue/dist/vue.esm-bundler';
+                import app from "./src/js/laracast-ep8-and-so-on/app.js"
+
+                createApp(app).mount("#app");
+            </script>
+        </div>
+
+    </body>
+
+</html>

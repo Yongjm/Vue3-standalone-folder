@@ -37,6 +37,10 @@
   }
 /*above snipped from bootstrap*/
 
+body {
+  text-align: center;
+}
+
 .buttonContainer {
   text-align: center;
 }
