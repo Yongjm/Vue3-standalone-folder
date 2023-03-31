@@ -1,0 +1,31 @@
+{
+    "assignments": [
+        {
+            "name": "task1",
+            "complete": false,
+            "id": 1,
+            "tag": "math"
+        },
+
+        {
+            "name": "task2",
+            "complete": false,
+            "id": 2,
+            "tag": "science"
+        },
+
+        {
+            "name": "task3",
+            "complete": false,
+            "id": 3,
+            "tag": "math"
+        },
+
+        {
+            "name": "task4",
+            "complete": true,
+            "id": 3,
+            "tag": "something else"
+        }
+    ]
+}

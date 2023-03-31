@@ -14,11 +14,7 @@ export default {
 
     data() {
         return {
-            assignments: [
-                { name: 'task1', complete: false, id: 1},
-                { name: 'task2', complete: false, id: 2},
-                { name: 'task3', complete: false, id: 3},
-            ],
+            assignments: [],
         }
     },
 
@@ -29,6 +25,15 @@ export default {
                 completed: this.assignments.filter(assignment => assignment.complete)
             }
         }
+    },
+
+    created() {
+        fetch("http://localhost:3000/assignments")
+        .then(response => response.json())
+        .then(assignments => {
+            this.assignments = assignments;
+        });
+
     },
     
     methods: {
